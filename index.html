@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCLaunch - RC Cars Collection</title>
+  <style>
+    /* === General Styles === */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #111; /* black background */
+      color: #FFD700; /* yellow text */
+    }
+
+    a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    /* === Header === */
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #FFD700;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    /* === Navigation === */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111;
+      padding: 10px 0;
+      gap: 20px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* === Section Styles === */
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #FFD700;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    /* === RC Cars List === */
+    .cars-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .car-card {
+      background-color: #222;
+      padding: 15px;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .car-card:hover {
+      transform: scale(1.05);
+    }
+
+    .car-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      border-top: 3px solid #FFD700;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>RCLaunch</h1>
+    <p>RC Cars Collection</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#welcome">Welcome</a>
+    <a href="#about">About Me</a>
+    <a href="#cars">RC Cars</a>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <h2>Welcome</h2>
+    <p>Welcome to RCLaunch! Explore the world of remote-controlled cars. Here you will find the coolest RC cars, descriptions, and details. This website is built for RC car enthusiasts like you!</p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a passionate RC car collector and hobbyist. This website showcases my favorite RC cars, their specs, and reviews. My goal is to share the excitement of RC cars with everyone!</p>
+  </section>
+
+  <!-- RC Cars Section -->
+  <section id="cars">
+    <h2>RC Cars List</h2>
+    <div class="cars-list">
+      <div class="car-card">
+        <h3>RC Car 1</h3>
+        <p>High-speed electric RC car, perfect for beginners.</p>
+      </div>
+      <div class="car-card">
+        <h3>RC Car 2</h3>
+        <p>Durable off-road RC car with amazing suspension.</p>
+      </div>
+      <div class="car-card">
+        <h3>RC Car 3</h3>
+        <p>Mini RC car, compact and easy to control.</p>
+      </div>
+      <div class="car-card">
+        <h3>RC Car 4</h3>
+        <p>Professional racing RC car for advanced users.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 RCLaunch | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
