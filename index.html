@@ -431,6 +431,98 @@
     </a>
 </div>
 
+
+<!-- REQUEST CALL SECTION -->
+<section class="request-call">
+    <h2>Want to talk with us?</h2>
+    <a href="tel:+1234567890" class="request-btn" id="requestBtn">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Call Icon" class="call-icon">
+        Request Call
+    </a>
+</section>
+
+<style>
+/* REQUEST CALL SECTION STYLES */
+.request-call {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 50px 8%;
+}
+
+.request-call h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000; /* Black heading */
+}
+
+.request-call .request-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background-color: #00ffff; /* Aqua background */
+    color: #000; /* Black text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px; /* Fully round */
+    border: 2px solid #000; /* Black border for contrast */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.request-call .request-btn:hover {
+    background-color: #00e5e5;
+    transform: translateY(-2px);
+}
+
+.request-call .call-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* CLICKED STATE */
+.request-call .request-btn.clicked {
+    background-color: #808080; /* Grey background */
+    color: #fff; /* White bold text */
+    border-color: #808080;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .request-call h2 {
+        font-size: 24px;
+    }
+
+    .request-call .request-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .request-call .call-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+</style>
+
+<script>
+// BUTTON CLICK FUNCTIONALITY
+const requestBtn = document.getElementById('requestBtn');
+
+requestBtn.addEventListener('click', function(e) {
+    e.preventDefault(); // prevent default phone link behavior
+    this.textContent = "Request successfully captured"; // change text
+    this.classList.add('clicked'); // change color to grey + white
+    this.href = "#"; // remove link to prevent further clicks
+});
+</script>
+
+
+
+
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
     <h2>Contact Us</h2>
